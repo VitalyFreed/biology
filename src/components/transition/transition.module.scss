@@ -1,0 +1,19 @@
+.transition {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+
+  &__circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+    &-active {
+      background: #e76100;
+    }
+  }
+}

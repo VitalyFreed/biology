@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+$text-color: rgb(243, 241, 241);
+
+.organs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 80px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: rgba(36, 120, 181, 0.7);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 15px rgba(36, 120, 181, 1);
+  }
+
+  img {
+    display: block;
+    width: 80%;
+  }
+}
+
+.title {
+  font-size: 36px;
+  font-family: "GothamPro";
+  color: $text-color;
+  line-height: 1.2;
+  text-align: left;
+  align-self: flex-start;
+  padding-left: 70px;
+  padding-top: 50px;
+}
+
+.title-group {
+  display: flex;
+
+  &__number {
+    font-size: 42px;
+    font-family: "Lato";
+    color: $text-color;
+    line-height: 1.2;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-family: "Lato";
+    color: $text-color;
+    line-height: 1.2;
+  }
+}
+
+.first {
+  flex: 1;
+
+  .container {
+    align-items: flex-end;
+
+    .intestines {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-bottom: 40px;
+
+      .title-group {
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 10px;
+      }
+    }
+
+    .infection {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-bottom: 80px;
+
+      .title-group {
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 10px;
+        text-align: right;
+      }
+    }
+
+    .stomach {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+
+      .title-group {
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 10px;
+      }
+    }
+
+    .amelyn {
+      font-size: 15px;
+      position: relative;
+      top: -50px;
+    }
+  }
+}
+
+.second {
+  margin-top: -100px;
+  margin-right: -100px;
+  margin-left: -100px;
+  flex: 2;
+
+  .beta {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .title-group {
+      align-items: center;
+
+      &__title {
+        padding-left: 10px;
+      }
+    }
+
+    .circle {
+      width: 90px;
+      height: 90px;
+    }
+
+    img {
+      position: relative;
+      transform: translateX(6%);
+      width: 40%;
+    }
+  }
+
+  .incret-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 80px;
+
+    .incret {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 50%;
+      padding-right: 20px;
+
+      .title-group {
+        align-items: flex-end;
+        flex-direction: column;
+
+        &__title {
+          text-align: right;
+        }
+      }
+    }
+
+    .defect {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 50%;
+      padding-left: 20px;
+
+      .title-group {
+        align-items: flex-start;
+        flex-direction: column;
+
+        &__title {
+        }
+      }
+    }
+  }
+
+  .giperglikemiya {
+    margin-top: 60px;
+  }
+
+  .glukagon {
+    font-size: 15px;
+    position: relative;
+    top: 10px;
+    left: 50px;
+  }
+
+  .kidneys {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 40px;
+    position: relative;
+
+    .title-group {
+      position: absolute;
+      transform: translateX(-100%);
+      padding-right: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    img {
+      position: relative;
+      transform: translate(-10%, -10%);
+    }
+  }
+}
+
+.third {
+  flex: 1;
+
+  .container {
+    align-items: flex-start;
+
+    .brain {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 40px;
+
+      .title-group {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+      }
+    }
+
+    .capa {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .title-group {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+      }
+    }
+
+    .musle {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .title-group {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+      }
+    }
+
+    .lipid {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .title-group {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+        text-align: left;
+      }
+    }
+
+    .insuline-block {
+      text-align: center;
+    }
+
+    .insuline {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
